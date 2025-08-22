@@ -89,10 +89,4 @@ This project is designed to simulate real-world mobile development workflows, em
 
 ## Screenshots
 
-## 👨‍💻 Author
-- Mark Bassem Samir
-- Flutter Developer | Mobile App Enthusiast
-
- 
-
 
