@@ -87,7 +87,7 @@ This project is designed to simulate real-world mobile development workflows, em
 ## Screenshots
 | Home Screen |
 |--------------|
-| ![Screenshot 1](https://github.com/user-attachments/assets/36256f5f-3a7a-4e36-bd5c-ef1b4ee3f8d9 =250x500) | ![Screenshot 2](https://github.com/user-attachments/assets/4c376c24-9c13-4d48-b4db-4108a72ce89e) |
+| ![Screenshot 1](https://github.com/user-attachments/assets/36256f5f-3a7a-4e36-bd5c-ef1b4ee3f8d9) | ![Screenshot 2](https://github.com/user-attachments/assets/4c376c24-9c13-4d48-b4db-4108a72ce89e) |
 
 
 
