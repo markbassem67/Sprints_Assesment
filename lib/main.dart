@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),fontFamily: 'Suwannaphum'
       ),
-      home: WelcomeScreen(),
+      home: const WelcomeScreen(),
     );
   }
 }

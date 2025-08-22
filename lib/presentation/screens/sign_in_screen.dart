@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/cupertino_alert_dialog.dart';
 import '../widgets/signin_textformfields.dart';
 
 class SignInScreen extends StatelessWidget {
   SignInScreen({super.key});
 
   final SignInTextFormFields signInFormFields = SignInTextFormFields();
+  CustomAlertDialog showAlertDialog = CustomAlertDialog();
 
   @override
   Widget build(BuildContext context) {
@@ -21,14 +23,18 @@ class SignInScreen extends StatelessWidget {
             ),
           ),
           child: Scaffold(
+            resizeToAvoidBottomInset: false,
             backgroundColor: Colors.transparent,
             appBar: AppBar(
+              iconTheme: const IconThemeData(
+                color: Colors.white, // your custom color
+              ),
               automaticallyImplyLeading: true,
               backgroundColor: Colors.transparent,
             ),
             body: Center(
               child: Container(
-                padding: EdgeInsets.all(18),
+                padding: const EdgeInsets.all(18),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(16.0),
@@ -39,7 +45,7 @@ class SignInScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Center(
+                    const Center(
                       child: Text(
                         ' Welcome Back',
                         style: TextStyle(
@@ -49,7 +55,7 @@ class SignInScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Center(
+                    const Center(
                       child: Text(
                         'Sign in to ShopCraft',
                         style: TextStyle(
@@ -59,9 +65,9 @@ class SignInScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     signInFormFields.signInTextFormFields(),
-                    SizedBox(height: 25),
+                    const SizedBox(height: 25),
                     Center(
                       child: SizedBox(
                         width: MediaQuery.of(context).size.width,
@@ -69,32 +75,26 @@ class SignInScreen extends StatelessWidget {
                           onPressed: () {
                             if (signInFormFields.formKey.currentState!
                                 .validate()) {
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                SnackBar(
-                                  backgroundColor: Colors.green,
-                                  content: Text(
-                                    "Account created successfully!",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ),
+                              showAlertDialog.showConfirmationDialog(
+                                context,
+                                'Account sign-in Successfully!',
+                                'Welcome!',
                               );
                             }
                           },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0xFF9234e8),
+                            backgroundColor: const Color(0xFF9234e8),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(
                                 8,
                               ), // less circle
                             ),
                           ),
-                          child: Text(
-                            'Create Account',
+                          child: const Text(
+                            'Sign In',
                             style: TextStyle(
                               color: Colors.white,
-                              fontSize: 18,
+                              fontSize: 19,
                               fontWeight: FontWeight.bold,
                             ),
                           ),

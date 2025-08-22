@@ -14,8 +14,8 @@ class SignUpTextFormFields {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("Full Name", style: TextStyle(fontWeight: FontWeight.bold)),
-          SizedBox(height: 6),
+          const Text("Full Name", style: TextStyle(fontWeight: FontWeight.bold)),
+          const SizedBox(height: 6),
           TextFormField(
             controller: _nameCtrl,
             validator: (value) {
@@ -32,7 +32,7 @@ class SignUpTextFormFields {
             },
             decoration: InputDecoration(
               hintText: "Enter your full name",
-              contentPadding: EdgeInsets.symmetric(
+              contentPadding: const EdgeInsets.symmetric(
                 horizontal: 14,
                 vertical: 14,
               ),
@@ -46,9 +46,9 @@ class SignUpTextFormFields {
               ),
             ),
           ),
-          SizedBox(height: 16),
-          Text("Email", style: TextStyle(fontWeight: FontWeight.bold)),
-          SizedBox(height: 6),
+          const SizedBox(height: 16),
+          const Text("Email", style: TextStyle(fontWeight: FontWeight.bold)),
+          const SizedBox(height: 6),
           TextFormField(
             controller: _emailCtrl,
             validator: (value) {
@@ -63,7 +63,7 @@ class SignUpTextFormFields {
             },
             decoration: InputDecoration(
               hintText: "Enter your email",
-              contentPadding: EdgeInsets.symmetric(
+              contentPadding: const EdgeInsets.symmetric(
                 horizontal: 14,
                 vertical: 14,
               ),
@@ -77,9 +77,9 @@ class SignUpTextFormFields {
               ),
             ),
           ),
-          SizedBox(height: 16),
-          Text("Password", style: TextStyle(fontWeight: FontWeight.bold)),
-          SizedBox(height: 6),
+          const SizedBox(height: 16),
+          const Text("Password", style: TextStyle(fontWeight: FontWeight.bold)),
+          const SizedBox(height: 6),
           TextFormField(
             controller: _passCtrl,
             validator: (value) {
@@ -93,7 +93,7 @@ class SignUpTextFormFields {
             obscureText: true,
             decoration: InputDecoration(
               hintText: "Enter your password",
-              contentPadding: EdgeInsets.symmetric(
+              contentPadding: const EdgeInsets.symmetric(
                 horizontal: 14,
                 vertical: 14,
               ),
@@ -107,12 +107,12 @@ class SignUpTextFormFields {
               ),
             ),
           ),
-          SizedBox(height: 16),
-          Text(
+          const SizedBox(height: 16),
+          const Text(
             "Confirm Password",
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
-          SizedBox(height: 6),
+          const SizedBox(height: 6),
           TextFormField(
             controller: _confirmCtrl,
             validator: (value) {
@@ -126,7 +126,7 @@ class SignUpTextFormFields {
             obscureText: true,
             decoration: InputDecoration(
               hintText: "Confirm your password",
-              contentPadding: EdgeInsets.symmetric(
+              contentPadding: const EdgeInsets.symmetric(
                 horizontal: 14,
                 vertical: 14,
               ),

@@ -21,10 +21,9 @@ class WelcomeScreen extends StatelessWidget {
           child: Scaffold(
             backgroundColor: Colors.transparent,
             appBar: AppBar(
-              title: Text(
+              title: const Text(
                 'ShopCraft',
                 style: TextStyle(
-                  fontFamily: 'Suwannaphum',
                   color: Colors.white,
                   fontSize: 26,
                   fontWeight: FontWeight.w700,
@@ -50,13 +49,14 @@ class WelcomeScreen extends StatelessWidget {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(16.0),
                         child: Image.network(
-                          'https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I',width: 200,
+                          'https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I',
+                          width: 200,
                         ),
                       ),
                     ],
                   ),
-                  SizedBox(height: 10),
-                  Text(
+                  const SizedBox(height: 10),
+                  const Text(
                     'Your Premium Shopping Experience',
                     style: TextStyle(
                       color: Colors.white,
@@ -64,15 +64,19 @@ class WelcomeScreen extends StatelessWidget {
                       fontWeight: FontWeight.w500,
                     ),
                   ),
-                  SizedBox(height: 17),
+                  const SizedBox(height: 17),
                   SizedBox(
                     width: 160,
                     child: ElevatedButton(
-                      onPressed: () {Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => SignUpScreen()),
-                      );},
-                      child: Text(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => SignUpScreen(),
+                          ),
+                        );
+                      },
+                      child: const Text(
                         'Sign Up',
                         style: TextStyle(
                           color: Color(0xFF9234e8),
@@ -81,15 +85,19 @@ class WelcomeScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(height: 5),
+                  const SizedBox(height: 5),
                   SizedBox(
                     width: 160,
                     child: ElevatedButton(
-                      onPressed: () {Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => SignInScreen()),
-                      );},
-                      child: Text(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => SignInScreen(),
+                          ),
+                        );
+                      },
+                      child: const Text(
                         'Sign In',
                         style: TextStyle(
                           color: Color(0xFF9234e8),

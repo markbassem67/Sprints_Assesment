@@ -13,8 +13,8 @@ class SignInTextFormFields {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("Email", style: TextStyle(fontWeight: FontWeight.bold)),
-          SizedBox(height: 6),
+          const Text("Email", style: TextStyle(fontWeight: FontWeight.bold)),
+          const SizedBox(height: 6),
           TextFormField(
             controller: _emailCtrl,
             validator: (value) {
@@ -29,7 +29,7 @@ class SignInTextFormFields {
             },
             decoration: InputDecoration(
               hintText: "Enter your email",
-              contentPadding: EdgeInsets.symmetric(
+              contentPadding: const EdgeInsets.symmetric(
                 horizontal: 14,
                 vertical: 14,
               ),
@@ -43,9 +43,9 @@ class SignInTextFormFields {
               ),
             ),
           ),
-          SizedBox(height: 16),
-          Text("Password", style: TextStyle(fontWeight: FontWeight.bold)),
-          SizedBox(height: 6),
+          const SizedBox(height: 16),
+          const Text("Password", style: TextStyle(fontWeight: FontWeight.bold)),
+          const SizedBox(height: 6),
           TextFormField(
             controller: _passCtrl,
             validator: (value) {
@@ -59,7 +59,7 @@ class SignInTextFormFields {
             obscureText: true,
             decoration: InputDecoration(
               hintText: "Enter your password",
-              contentPadding: EdgeInsets.symmetric(
+              contentPadding: const EdgeInsets.symmetric(
                 horizontal: 14,
                 vertical: 14,
               ),
