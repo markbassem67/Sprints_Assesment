@@ -76,7 +76,7 @@ This project is designed to simulate real-world mobile development workflows, em
 
 ## Setup Instructions
 ### 1: Clone the repository
-- git clone https://github.com/<your-username>/flutter-shopping-app.git
+- git clone https://github.com/markbassem67/Sprints_Assesment.git
 
 ### 2: Navigate into project folder
 - cd flutter-shopping-app
