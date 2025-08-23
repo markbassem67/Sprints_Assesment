@@ -14,7 +14,10 @@ class SignUpTextFormFields {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text("Full Name", style: TextStyle(fontWeight: FontWeight.bold)),
+          const Text(
+            "Full Name",
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
           const SizedBox(height: 6),
           TextFormField(
             controller: _nameCtrl,

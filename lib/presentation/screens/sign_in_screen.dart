@@ -87,7 +87,7 @@ class SignInScreen extends StatelessWidget {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(
                                 8,
-                              ), // less circle
+                              ),
                             ),
                           ),
                           child: const Text(

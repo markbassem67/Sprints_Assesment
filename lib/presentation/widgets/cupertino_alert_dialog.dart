@@ -34,17 +34,17 @@ class CustomAlertDialog {
                 Navigator.of(context).push(
                   PageRouteBuilder(
                     transitionDuration: const Duration(milliseconds: 500),
-                    pageBuilder: (context, animation, secondaryAnimation) => const ShoppingHomeScreen(),
-                    transitionsBuilder: (context, animation, secondaryAnimation, child) {
-                      return FadeTransition(
-                        opacity: animation,
-                        child: child,
-                      );
-                    },
+                    pageBuilder: (context, animation, secondaryAnimation) =>
+                        const ShoppingHomeScreen(),
+                    transitionsBuilder:
+                        (context, animation, secondaryAnimation, child) {
+                          return FadeTransition(
+                            opacity: animation,
+                            child: child,
+                          );
+                        },
                   ),
                 );
-
-                // put your logic here
               },
             ),
           ],

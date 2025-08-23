@@ -25,9 +25,7 @@ class SignUpScreen extends StatelessWidget {
           child: Scaffold(
             resizeToAvoidBottomInset: false,
             appBar: AppBar(
-              iconTheme: const IconThemeData(
-                color: Colors.white, // your custom color
-              ),
+              iconTheme: const IconThemeData(color: Colors.white),
               automaticallyImplyLeading: true,
               backgroundColor: Colors.transparent,
             ),
@@ -86,9 +84,7 @@ class SignUpScreen extends StatelessWidget {
                             style: ElevatedButton.styleFrom(
                               backgroundColor: const Color(0xFF9234e8),
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(
-                                  8,
-                                ), // less circle
+                                borderRadius: BorderRadius.circular(8),
                               ),
                             ),
                             child: const Text(
