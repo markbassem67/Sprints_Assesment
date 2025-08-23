@@ -13,7 +13,6 @@ The app includes:
 - **Smooth animated transitions** between pages.  
 - A **Shopping Home Screen** with featured products, a responsive product grid, and hot offers.  
 - **SnackBar feedback** for cart actions.  
-- **Bonus Feature**: Complete Arabic localization using `.arb` files and `intl` package.  
 
 This project is designed to simulate real-world mobile development workflows, emphasising **clean code**, **reusability**, and **best practices**.
 
@@ -62,17 +61,6 @@ This project is designed to simulate real-world mobile development workflows, em
 
 ---
 
-### 5. Bonus: Arabic Language Support  
-- All strings translated:  
-  - “Our Products” → “منتجاتنا”  
-  - “Hot Offers” → “العروض الساخنة”  
-  - Form labels and messages in Arabic.  
-- Implemented with `.arb` files and `intl`.
-
-
-## 📂 Project Structure
-
-
 
 ## Setup Instructions
 #### 1: Clone the repository
@@ -97,6 +85,16 @@ This project is designed to simulate real-world mobile development workflows, em
 | sign in password < 6 chars | sign in empty fields |
 |--------------|--------------|
 | ![Screenshot 1](https://github.com/user-attachments/assets/50382305-2dc7-4eaf-863e-39c61325a042) | ![Screenshot 2](https://github.com/user-attachments/assets/88e320d0-58de-412c-be34-e5301b0d6acc) |
+
+
+| Home Screen Screenshot 1 | Home Screen Screenshot 2 | Home Screen Screenshot 3 |
+|--------------|--------------|--------------|
+| ![Screenshot 1](https://github.com/user-attachments/assets/235ab1ce-597a-4e44-a01c-f84bc4f722c1) | ![Screenshot 2](https://github.com/user-attachments/assets/ef0a10ee-907c-4413-823a-9b97514e36d6) | ![Screenshot 3](https://github.com/user-attachments/assets/934c97fd-ef1f-4532-b61f-77e2627db4c6) |
+
+
+
+
+
 
 
 
