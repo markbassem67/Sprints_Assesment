@@ -85,9 +85,22 @@ This project is designed to simulate real-world mobile development workflows, em
 - flutter run
 
 ## Screenshots
-| Home Screen |
-|--------------|
-| ![Screenshot 1](https://github.com/user-attachments/assets/36256f5f-3a7a-4e36-bd5c-ef1b4ee3f8d9) | ![Screenshot 2](https://github.com/user-attachments/assets/4c376c24-9c13-4d48-b4db-4108a72ce89e) |
+| Welcome Screen | Sign up screen | Sign in screen |
+|--------------|--------------|--------------|
+| ![Screenshot 1](https://github.com/user-attachments/assets/36256f5f-3a7a-4e36-bd5c-ef1b4ee3f8d9) | ![Screenshot 2](https://github.com/user-attachments/assets/4c376c24-9c13-4d48-b4db-4108a72ce89e) | <img width="1290" height="2796" alt="Simulator Screenshot - iPhone 16 Plus - 2025-08-23 at 00 52 23" src="https://github.com/user-attachments/assets/8097874c-bb57-467d-b316-182b76647a72" />
+
+| Sign Up Validation in Action | Cupertino Alert Dialog after Successful Sign Up |
+|------------------------------|-------------------------------------------------|
+| ![Sign Up Validation](https://github.com/user-attachments/assets/47e2a83e-b90b-4b2a-b068-1a3c964420c9) | ![Cupertino Alert Dialog](https://github.com/user-attachments/assets/b6c98483-82ed-49a4-9628-7d03a9b01cd8) |
+
+
+| sign in password < 6 chars | sign in empty fields |
+|--------------|--------------|
+| ![Screenshot 1](https://github.com/user-attachments/assets/50382305-2dc7-4eaf-863e-39c61325a042) | ![Screenshot 2](https://github.com/user-attachments/assets/88e320d0-58de-412c-be34-e5301b0d6acc) |
+
+
+
+ 
 
 
 
